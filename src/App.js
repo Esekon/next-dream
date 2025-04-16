@@ -1,15 +1,18 @@
 import './App.css';
-import Signin from './components/Signin';
-import Signup from './components/Signup';
 import Home from './components/Home';
-import Makepayment from './components/Makepayment';
-import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
+import Navbar from './Navbar/Navbar';
+import Signup from './components/Signup';
+import Signin from './components/Signin';
+import Buy from './components/Buy';
 function App() {
   return (
     <Router>
+     
       <div className="App">
+     <Navbar/>
         <header className="App-header"> 
           <h1>
             <span className='imgspan'>
@@ -20,17 +23,12 @@ function App() {
             </h1>
         </header>
         <br />
-        <nav>
-          <Link to= '/Signup' className='btn btn-dark mx-2 px-5'>signup </Link>
-          <Link to = '/Signin' className='btn btn-dark mx-2 px-5'> signin</Link>
-          <Link to ='/' className='btn btn-dark mx-2 px-5'> Home</Link>
-     
-        </nav>
+
         <Routes>
+          <Route path='/' element={<Home/>}/>
           <Route path='/Signup' element={<Signup/>}/>
           <Route path='/Signin' element={<Signin/>}/>
-          <Route path='/Makepayment' element={<Makepayment/>}/>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/Buy' element={<Buy/>}/>
         </Routes>
       </div>
     </Router>

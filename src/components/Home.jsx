@@ -3,7 +3,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Mycarosel from './Mycarosel';
+import Mycarosel from '../carosel/Mycarosel';
 
 
 const Home = () => {
@@ -82,7 +82,7 @@ const Home = () => {
 
                   <button
                     className='btn btn-success mt-2 w-100'
-                    onClick={() => navigate('/payment', { state: { product } })}
+                    onClick={() => navigate('/Buy', { state: { product } })}
                   >
                     purchase now
 
