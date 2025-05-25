@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #111;
+  background-color: #282c34; /* consistent dark background */
   min-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -36,25 +36,25 @@
     transform: rotate(360deg);
   }
 }
-/* 
-.signinstyle{
- background: #000;
+
+/* Signin style */
+.signinstyle {
+  background-image: url('static/images/nextdream.webp');
   height: 40vh;
-  width: 100%;
+  width: 150vh;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-.signupstyle{
- background: #000;
-  width: 100%;
+/* Signup style */
+.signupstyle {
+  background-image: url('static/images/cocacola6.jpg');
+  height: 100vh;
+  width: 150vh;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-} */
-
-
+}

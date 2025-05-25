@@ -1,11 +1,9 @@
+import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import  { useState } from 'react';
-
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -32,10 +30,9 @@ const Navbar = () => {
         <Link to='/Signup' className='btn btn-secondary mx-2 px-5'>
           Signup
         </Link>
-        <Link to='/Signin' className='btn btn-secondary mx-2 px-5 '>
+        <Link to='/Signin' className='btn btn-secondary mx-2 px-5'>
           Signin
         </Link>
-      
       </div>
     </nav>
   );
