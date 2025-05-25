@@ -1,0 +1,25 @@
+.classy-button {
+  background-color: #ffcb05;
+  color: #1c1c1c;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.classy-button:hover {
+  background-color: #e6b800;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.product-row {
+  margin: 50px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background: #222;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}

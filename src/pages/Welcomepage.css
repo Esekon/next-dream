@@ -1,0 +1,59 @@
+.welcome-page {
+  background-image: url('/src/static/images/next\ dream\ logo.avif');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-heading {
+  position: absolute;
+  top: 30px;
+  font-size: 48px;
+  font-weight: bold;
+  color: rgb(216, 12, 12);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.classy-button {
+  background-color: #fff5f5;
+  color: #1c1c1c;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.classy-button:hover {
+  background-color: #e60000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.classy-button.outline {
+  background-color: transparent;
+  border: 2px solid #ff0505;
+  color: #ff0505;
+}
+
+.classy-button.outline:hover {
+  background-color: #ff0505;
+  color: #1c1c1c;
+}
