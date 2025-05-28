@@ -5,74 +5,54 @@ import whatsapplogo from '../static/images/whatsapplogo.png';
 
 const Footer = () => {
   return (
-    <div>
-      <section className="row text-white bg-dark p-4">
-        <h2 className="text-center">Next Dream</h2>
+    <div className="footer-container bg-dark text-white pt-4">
+      <div className="container">
+        <div className="row text-center text-md-start">
 
-        <div className="col-md-4">
-          <h4 className="text-center text-dark">Location</h4>
-          <p className="text-white"><b>We are located in Turkana, Kainuk</b></p>
-          <p className="text-white">Address: 11-30500</p>
+          {/* Logo & Location */}
+          <div className="col-md-4 mb-4">
+            <h3 className="text-danger fw-bold mb-3">Next Dream</h3>
+            <h5 className="text-white">📍 Location</h5>
+            <p><strong>Kainuk, Turkana</strong></p>
+            <p>Address: 11-30500</p>
+          </div>
+
+          {/* Contact Form */}
+          <div className="col-md-4 mb-4">
+            <h5 className="text-white mb-3">📬 Contact Us</h5>
+            <form>
+              <input type="email" placeholder="Enter your email" className="form-control mb-2" />
+              <textarea className="form-control mb-2" rows="4" placeholder="Your message..." />
+              <input type="submit" className="btn btn-outline-danger w-100" value="Send Message" />
+            </form>
+          </div>
+
+          {/* Social Media */}
+          <div className="col-md-4 mb-4">
+            <h5 className="text-white mb-3">📲 Stay Connected</h5>
+            <div className="d-flex justify-content-center justify-content-md-start mb-2">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="me-3">
+                <img src={fblogo} alt="Facebook" width="40" height="40" />
+              </a>
+              <a href="https://instagram.com/_.3guman_" target="_blank" rel="noopener noreferrer" className="me-3">
+                <img src={instalogo} alt="Instagram" width="40" height="40" />
+              </a>
+              <a href="https://wa.me/254742208491" target="_blank" rel="noopener noreferrer">
+                <img src={whatsapplogo} alt="WhatsApp" width="40" height="40" />
+              </a>
+            </div>
+            <p>
+              Order your drinks and products easily through our platforms.
+              Stay connected via Facebook, Instagram & WhatsApp.
+            </p>
+          </div>
+
         </div>
+      </div>
 
-        <div className="col-md-4">
-          <h4 className="text-center"><b>Contact us</b></h4>
-          <form>
-            <input type="email" placeholder="Enter your Email" className="form-control" />
-            <br />
-            <textarea
-              className="form-control"
-              placeholder="Send us a message"
-              rows="7"
-            />
-            <br />
-            <input type="submit" value="Send message" className="btn btn-outline-danger" />
-          </form>
-        </div>
-
-        <div className="col-md-4">
-          <h4 className="text-center">Stay Connected</h4>
-          <br />
-          {/* Use <a> instead of Link for external URLs */}
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <img
-              src={fblogo}
-              alt="Facebook"
-              width="50"
-              height="50"
-              style={{ marginRight: "20px" }}
-            />
-          </a>
-
-          <a href="https://instagram.com/_.3guman_" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <img
-              src={instalogo}
-              alt="Instagram"
-              width="50"
-              height="50"
-              style={{ marginRight: "20px" }}
-            />
-          </a>
-
-          <a href="https://wa.me/254742208491" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-            <img
-              src={whatsapplogo}
-              alt="WhatsApp"
-              width="50"
-              height="50"
-            />
-          </a>
-
-          <p className="text-white" style={{ marginTop: "15px" }}>
-            You can keep up with us on our social platforms.
-            Order your drinks and products easily through our platforms.
-            Always remember to stay connected with us via Amazon, Facebook, and Instagram.
-          </p>
-        </div>
-      </section>
-
-      <footer className="bg-danger text-white text-center p-2">
-        <h5>Next Dream &copy; 2025. All rights reserved.</h5>
+      {/* Footer Bottom */}
+      <footer className="bg-danger text-center py-2 mt-4">
+        <p className="mb-0 fw-bold">Next Dream &copy; 2025. All rights reserved.</p>
       </footer>
     </div>
   );
